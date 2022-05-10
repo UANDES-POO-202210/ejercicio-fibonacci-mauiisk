@@ -1,7 +1,10 @@
+//secuancia de Fibonacci en java Script
+//F0 F1 Fk=0,=1,=Fk−1+Fk−2,cuando k≥2
 
 
 
-
+//la funcion parte construyendo una array con los numeros de Fibonacci hasta que el ultimo sea mayor al numero que se le entrega a ala funcion
+//luego revisa si hay que retornar el ultimo numero o crear un num de Fibonacci mas 
 function fibonacci(num){
     if (num <= 2) return 1;
     var nums = [1, 1];
@@ -18,7 +21,8 @@ function fibonacci(num){
 
 
 const fs = require("fs");
-//
+//leyendo el archivo 
+//codigo sacado de internet ajustado a las istrucciones de la tarea
 fs.readFile('Tarea_FB.txt', 'utf8', (err, data) => {
 	if(err){
 		console.error(err);
